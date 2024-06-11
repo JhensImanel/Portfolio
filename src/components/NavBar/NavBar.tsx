@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
 
   const sections = [
-    { name: 'Sobre mí ', to: '/' },
+    { name: 'Inicio', to: '/' },
     { name: 'Habilidades', to: '/skills' },
     { name: 'Experiencia', to: '/experience' },
     { name: 'Proyectos', to: '/projects' },
@@ -26,18 +26,20 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className={`fixed sm:px-16 left-0 py-3 px-5 transition duration-300 text-black flex justify-between top-0 items-center z-50 shadow-md w-full ${scrolled ? 'backdrop-blur-md' : 'backdrop-blur-sm'
+    <nav className={`font-dosis box-border  text-center rounded-b-3xl px-16 left-0 py-3 transition duration-300 text-black flex justify-between top-0 items-center shadow-md w-[100%] ${scrolled ? 'backdrop-blur-md' : 'backdrop-blur-sm'
       }`}>
 
-      <span className="flex gap-3 items-center">
+      <span className="text-lg font-bold flex gap-3 items-center">
         <Link to='/'>Jhens</Link>
-        <div className='relative'><img className="h-10 w-auto rounded-full" src="/image/photo.jpg" alt="profile" /> <span className='top-0 left-7 absolute size-[10px] bg-green-400 border-[1px] border-white dark:border-black rounded-full'></span></div>
       </span>
 
-      <ul className="flex gap-1">
+      <ul className="flex items-center">
         {sections.map(({ name, to }, index) => (
-          <Link to={to} key={index} className="py-2 px-3 rounded-full hover:bg-gray-300">{name}</Link>
+          <Link to={to} key={index} className="items-center py-1 px-3 text-center rounded-full hover:bg-gray-300">{name}</Link>
         ))}
+        <a href='/public/pdf/CV_Jhens.pdf' download className='py-1 px-5 ml-1 rounded-full bg-transparent border-blue-500 border-2 text-blue-500 hover:bg-blue-500 hover:text-white transition items-center'>
+          CV
+        </a>
       </ul>
 
     </nav>

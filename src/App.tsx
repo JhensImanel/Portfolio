@@ -6,17 +6,16 @@ import Projects from './components/Projects/Projects.tsx';
 import Contact from './components/Contact/Contact.tsx';
 import Home from './components/About/Home.tsx';
 import Footer from './components/Footer/Footer.tsx';
-import icons from './assets/json/icons.json';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col max-h-screen bg-gray-200">
       <BrowserRouter>
         <NavBar />
-        <div className="h-screen flex justify-center items-center">
+        <div className="h-screen flex max-w-screen justify-center items-center m-0 p-0 overflow-hidden ">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/skills" element={<Skills icons={icons} />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />

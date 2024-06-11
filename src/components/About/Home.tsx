@@ -2,33 +2,49 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ['Frontend Developer Jr.', 'Freelance Web Designer ', 'Code Lover <3'],
-    loop: 3,
+    words: ['Frontend Developer Jr.', 'Web Designer', 'Code Lover <3'],
+    loop: 0
   });
+
+  const buttonsHome = [
+    { src: '/public/others/github.svg', href: 'https://github.com/JhensImanel', name: 'GitHub' },
+    { src: '/public/others/linkedin.svg', href: 'https://www.linkedin.com/in/jamesimanel/', name: 'LinkedIn' },
+    { src: '/public/others/gmail.svg', href: 'mailto:u18310128@gmail.com?subject=Entrevista%20laboral&body=Hola,%20estimado', name: 'Gmail' },
+    { src: '/public/others/outlook.svg', href: 'mailto:jamesimanel@hotmail.com?subject=Entrevista%20laboral&body=Hola,%20estimado', name: 'Outlook' },
+    { src: '/public/others/whatsapp.svg', href: 'whatsapp://send?phone=936615284&text=Hola,%20estimado', name: 'WhatsApp' },
+  ];
 
   return (
     <section>
-      <div className="container m-auto px-8 py-3 flex gap-8 mt-16">
+      <div className='container'>
         <div>
-          <h2 className="font-bold text-4xl">Hola, Soy Jhens Imanel</h2>
-          <h2 className="font-bold text-4xl mt-1 pb-3 gradiant-text">
+          <img className="h-16 w-auto rounded-full border-[1px] border-gray-100" src="/image/photo.jpg" alt="profile" />
+          <h2 className="font-bold text-4xl">Hola, Soy <span className='text-blue-500'>Jhens Imanel</span></h2>
+          <h2 className="font-bold text-4xl mt-1 pb-3 gradiant-text flex">
             <span>{text}</span>
-            <Cursor cursorColor="white" />
+            <Cursor cursorColor="black" />
           </h2>
-          <div className="mt-4 text-gray-400">
-            Joven con habilidad para desarrollar interfaces UI, manejo
-            del DOM, conexión a APIs. Me destaco por mi habilidad para adaptarme al cambio,
-            atención al detalle y creatividad. Actualmente, me encuentro
-            llevando cursos que me complementan como desarrollador y realizando
-            proyectos personales y elaborando mi tesis para optar la titulación.
-          </div>
         </div>
-        <div className="rounded-2xl ">
 
+        <article className="mb-10">
+          <span className="bg-green-100 text-center items-center text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Disponible para trabajar</span>
+        </article>
+
+        <div className="mt-4 text-gray-400 pb-10">
+          +1 año de experiencia en desarrollo UI, conociendo personas maravillosas, aprendiendo, alcanzando expectativas y brindando experiencias.
+        </div>
+
+        <div className='flex gap-4'>
+          {buttonsHome.map(({ src, href, name }, index) => (
+            <a key={index} className='flex gap-1.5 py-2 px-2 w-auto rounded-full bg-transparent border-blue-200 border-2 text-black hover:bg-blue-100 ' href={href} target="_blank" rel="noreferrer">
+              <img className='size-6' src={src} alt="" />
+              <p>{name}</p>
+            </a>
+          ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
