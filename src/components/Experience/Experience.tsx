@@ -20,7 +20,7 @@ const Experience = () => {
                 may 2024 - actualidad
               </time>
               <h3 className="text-lg font-semibold text-gray-900">
-                Freelance | Negocio Propio
+                Freelance
               </h3>
               <p className="mb-4 text-sm font-normal text-gray-500 dark:text-gray-400">
                 Desarrollo de <strong>landings page, SPAs e ecommerces</strong>.
@@ -37,7 +37,7 @@ const Experience = () => {
                 feb 2024 - abr 2024
               </time>
               <h3 className="text-lg font-semibold text-gray-900">
-                Practicante de Desarrollo Web | CCFFAA
+                Practicante Pre - Profesional | CCFFAA
               </h3>
               <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
                 Sistema que normaliza reportes de tickets y filtra por fecha. <br />

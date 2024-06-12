@@ -2,7 +2,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ['Frontend Developer Jr.', 'Web Designer', 'Code Lover <3'],
+    words: ['Front-end Developer Jr.', 'Freelance Web Designer', 'Code Lover <3'],
     loop: 0
   });
 
@@ -16,9 +16,10 @@ const Home = () => {
 
   return (
     <section>
-      <div className='container'>
+      <div className='container sm:px-16 px-6 w-full'>
+
         <div>
-          <img className="h-16 w-auto rounded-full border-[1px] border-gray-100" src="/image/photo.jpg" alt="profile" />
+          <img className="h-16 rounded-full border-[1px] border-gray-100" src="/image/photo.jpg" alt="profile" />
           <h2 className="font-bold text-4xl">Hola, Soy <span className='text-blue-500'>Jhens Imanel</span></h2>
           <h2 className="font-bold text-4xl mt-1 pb-3 gradiant-text flex">
             <span>{text}</span>
@@ -26,8 +27,11 @@ const Home = () => {
           </h2>
         </div>
 
-        <article className="mb-10">
-          <span className="bg-green-100 text-center items-center text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Disponible para trabajar</span>
+        <article className="mb-10 flex gap-4 items-center">
+          <a href='/public/pdf/CV_Jhens.pdf' download className='py-1 px-3 ml-1 rounded-full bg-transparent border-blue-500 border-2 text-blue-500 hover:bg-blue-500 hover:text-white items-center transition duration-300'>
+            Descargar CV
+          </a>
+          <span className="text-center items-center text-xs font-medium me-2 px-2.5 py-1 rounded-full text-blue-900 bg-blue-300">Disponible para trabajar</span>
         </article>
 
         <div className="mt-4 text-gray-400 pb-10">
@@ -36,12 +40,13 @@ const Home = () => {
 
         <div className='flex gap-4'>
           {buttonsHome.map(({ src, href, name }, index) => (
-            <a key={index} className='flex gap-1.5 py-2 px-2 w-auto rounded-full bg-transparent border-blue-200 border-2 text-black hover:bg-blue-100 ' href={href} target="_blank" rel="noreferrer">
+            <a key={index} className='flex gap-1.5 py-2 px-2 w-auto rounded-full bg-transparent transition duration-300 border-blue-200 border-2 text-black hover:bg-blue-100 ' href={href} target="_blank" rel="noreferrer">
               <img className='size-6' src={src} alt="" />
               <p>{name}</p>
             </a>
           ))}
         </div>
+
       </div>
     </section>
   );

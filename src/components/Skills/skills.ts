@@ -23,7 +23,7 @@ const skillsData = {
     { "icon": "/public/frontend/wordpress.svg", "label": "WordPress" }
   ],
   "Backend": [
-    { "icon": "/public/backend/expressjs_dark.svg", "label": "Express" },
+    { "icon": "/public/backend/expressjs.svg", "label": "Express" },
     { "icon": "/public/backend/firebase.svg", "label": "Firebase" },
     { "icon": "/public/backend/mysql.svg", "label": "MySQL" },
     { "icon": "/public/backend/postgresql.svg", "label": "PostgreSQL" },
