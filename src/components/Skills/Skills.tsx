@@ -6,9 +6,9 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState<SkillCategory>(initialCategory);
 
   const iconCategory: { [key: string]: string } = {
-    Frontend: '/public/image/iconBack.png',
-    Backend: '/public/image/iconOthers.png',
-    Otros: '/public/image/icon.png'
+    Frontend: '/iconBack.png',
+    Backend: '/iconOthers.png',
+    Otros: '/icon.png'
   };
 
   return (
