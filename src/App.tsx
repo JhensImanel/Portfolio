@@ -15,10 +15,10 @@ function App() {
         <div className="h-screen flex max-w-screen justify-center items-center m-0 p-0 overflow-hidden ">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/habilidades" element={<Skills />} />
+            <Route path="/experiencia" element={<Experience />} />
+            <Route path="/proyectos" element={<Projects />} />
+            <Route path="/contacto" element={<Contact />} />
           </Routes>
         </div>
         <Footer />

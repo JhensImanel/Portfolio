@@ -19,6 +19,7 @@ const Projects = () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
+         <section>
         {cardProjects.map(({ name, img, description, repository }, index) => (
           <SwiperSlide key={index} className="bg-gray-300 text-black rounded-xl">
 
@@ -31,7 +32,7 @@ const Projects = () => {
 
               <div className='flex flex-col items-center gap-2'>
                 <p className="text-center">{description}</p>
-                <a href={repository} target="_blank" rel="noopener noreferrer" className='p-1.5 hover:bg-slate-200 rounded-full transition duration-300'>
+                <a href={repository} target="_blank" rel="noopener noreferrer" className='p-1.5 hover:bg-white rounded-full transition duration-300'>
                   <img src="/code.svg" alt="Code Link" className="size-6" />
                 </a>
               </div>
@@ -39,6 +40,7 @@ const Projects = () => {
             </div>
           </SwiperSlide>
         ))}
+       </section>
       </Swiper>
     </>
   );

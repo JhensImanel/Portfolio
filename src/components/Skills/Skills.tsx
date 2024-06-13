@@ -14,7 +14,7 @@ export default function App() {
   return (
     <section>
       <div className="container">
-        <div className="w-[800px] h-[430px] rounded-[10px] bg-white overflow-hidden flex flex-col shadow-md">
+        <div className="sm:w-[800px] sm:h-[430px] h-[530px] w-[350px] rounded-[10px] bg-white overflow-hidden flex flex-col shadow-md">
           <nav className="bg-white pt-1 px-1 rounded-t-lg border-b-2 border-gray-200">
             <ul className="flex">
               {allSkillCategories.map((category) => (

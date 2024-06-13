@@ -35,6 +35,7 @@ const skillsData = {
     { icon: '/git.svg', label: 'Git' },
     { icon: '/github.svg', label: 'GitHub' },
     { icon: '/postman.svg', label: 'Postman' },
+    { icon: '/powerbi.svg', label: 'Power BI' }
   ],
 };
 

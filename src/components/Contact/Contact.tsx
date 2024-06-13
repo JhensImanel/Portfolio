@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <section className="bg-white border-blur-600 shadow-md rounded-xl border-[1px] border-[#1922324d] w-[780px] mx-16">
-      <div className="py-8 lg:py-4 px-4 mx-auto max-w-screen-md">
+    <section className="bg-white border-blur-600 shadow-md rounded-xl border-[1px] border-[#1922324d] w-[780px] mx-8 sm:mx-16">
+      <div className="sm:py-8 py-[0.625rem] lg:py-4 px-4 max-w-screen-md">
         <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-[#192232]">Contactame</h2>
 
         <form action="#" className="space-y-3">
