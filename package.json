@@ -6,7 +6,7 @@
   "homepage": "https://jhensimanel.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
-    "predeploy": "pnpm run build",
+    "predeploy": "pnpm run build && echo 'jamesimanel.xyz' > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
