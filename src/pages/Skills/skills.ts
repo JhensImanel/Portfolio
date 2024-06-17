@@ -13,6 +13,7 @@ const skillsData = {
     { icon: '/html.svg', label: 'HTML' },
     { icon: '/css.svg', label: 'CSS' },
     { icon: '/js.svg', label: 'JavaScript' },
+    { icon: '/ts.svg', label: 'TypeScript' },
     { icon: '/react.svg', label: 'React' },
     { icon: '/angular.svg', label: 'Angular' },
     { icon: '/figma.svg', label: 'Figma' },
