@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Experience from './pages/Experience.tsx';
 import Projects from './pages/Projects.tsx';
-import Contact from './pages/Contact.tsx';
 import Home from './pages/Home.tsx';
 import Skills from './pages/Skills.tsx';
 import MainLayout from './layouts/MainLayout';
+import Contact from './pages/Contact.tsx';
 
 const App: React.FC = () => {
   return (

@@ -2,7 +2,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Home: React.FC = () => {
   const [text] = useTypewriter({
-    words: ['Front-end Developer Jr.', 'Freelance Web Designer', 'Code Lover <3'],
+    words: ['Front-end Developer', 'Web Designer', 'Code Lover <3'],
     loop: 0
   });
 
@@ -16,12 +16,12 @@ const Home: React.FC = () => {
 
   return (
     <div className='sm:mx-56 mx-0'>
-    <div className='flex sm:justify-start justify-center'>
-      <div className="relative inline-block">
-        <div className='top-4 right-[11px] transform translate-x-1/2 -translate-y-1/2 rounded-full absolute p-[6px] bg-green-300 border border-green-600'></div>
-        <img className="mx-auto sm:mx-0 h-28 rounded-full border-[1px] border-gray-100" src="/photo.jpg" alt="profile" />
+      <div className='flex sm:justify-start justify-center'>
+        <div className="relative inline-block">
+          <div className='top-4 right-[11px] transform translate-x-1/2 -translate-y-1/2 rounded-full absolute p-[6px] bg-green-300 border border-green-600'></div>
+          <img className="mx-auto sm:mx-0 h-28 rounded-full border-[1px] border-gray-100" src="/photo.jpg" alt="profile" />
+        </div>
       </div>
-    </div>
 
       <div className='text-center sm:text-left select-none sm:mb-0 pb-4 my-5'>
         <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl">Hola, Soy <span className='text-blue-500'>Jhens Imanel</span></h2>
